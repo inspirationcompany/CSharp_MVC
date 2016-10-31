@@ -1,0 +1,16 @@
+﻿@*@model TestProject.Models.Movie*@
+@model TestProject.viewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Movie.Name</h2>
+@foreach (var customer in Model.Customers)
+{
+    <p>@customer.Name</p>
+}
+@*<p><h1>@Model.Customers</h1></p>*@
+
+
+
